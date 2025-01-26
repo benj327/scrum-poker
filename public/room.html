@@ -6,14 +6,19 @@
 </head>
 <body>
   <div class="container">
-    <h1>Scrum Poker</h1>
-    <p id="roomHeader"></p>
-
-    <div id="actions">
-      <button id="revealBtn" class="primary">Reveal</button>
-      <button id="resetBtn" class="secondary">Reset</button>
+    <!-- This row contains the title & room code on the left and the buttons on the right -->
+    <div class="title-row">
+      <div class="title-group">
+        <h1>Scrum Poker</h1>
+        <p class="room-code" id="roomHeader">Room Code: XXXX</p>
+      </div>
+      <div id="actions">
+        <button id="revealBtn" class="primary">Reveal</button>
+        <button id="resetBtn" class="secondary">Reset</button>
+      </div>
     </div>
 
+    <!-- Card options -->
     <div id="cardOptions">
       <button class="card-option" data-value="1">1</button>
       <button class="card-option" data-value="2">2</button>
@@ -25,7 +30,7 @@
     </div>
 
     <h2>Users</h2>
-    <ul id="usersList"></ul>
+    <div id="usersContainer" class="users-container"></div>
   </div>
 
   <script src="/socket.io/socket.io.js"></script>
