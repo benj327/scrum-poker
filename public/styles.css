@@ -178,6 +178,20 @@ button.secondary {
   font-weight: 500;
 }
 
+/* ...existing styles omitted for brevity... */
+
+/* Highlight the user tiles for lowest / highest estimates */
+.user-tile.lowest {
+  border-color: #ff6868;      /* or a distinct color you like */
+  box-shadow: 0 0 8px rgba(255, 104, 104, 0.7);
+}
+
+.user-tile.highest {
+  border-color: #28a745;     /* or a distinct color you like */
+  box-shadow: 0 0 8px rgba(40, 167, 69, 0.7);
+}
+
+
 /* If you previously had margin-bottom on #actions, 
    you can remove or override it now, because #actions 
    is in a flex row next to the title. */
@@ -186,3 +200,5 @@ button.secondary {
   gap: 10px;
   margin-bottom: 0; /* Remove any leftover margin if you had it before */
 }
+
+

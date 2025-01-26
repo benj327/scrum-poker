@@ -6,7 +6,7 @@
 </head>
 <body>
   <div class="container">
-    <!-- This row contains the title & room code on the left and the buttons on the right -->
+    <!-- Title row -->
     <div class="title-row">
       <div class="title-group">
         <h1>Scrum Poker</h1>
@@ -29,11 +29,18 @@
       <button class="card-option" data-value="21">21</button>
     </div>
 
+    <!-- Average / Results display -->
+    <div id="results"></div>
+
     <h2>Users</h2>
     <div id="usersContainer" class="users-container"></div>
   </div>
 
+  <!-- 1) Confetti library -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <!-- 2) Socket.IO -->
   <script src="/socket.io/socket.io.js"></script>
+  <!-- 3) Your main client logic -->
   <script src="client.js"></script>
 </body>
 </html>
