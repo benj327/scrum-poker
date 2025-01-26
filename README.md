@@ -36,17 +36,6 @@ A free, real-time Scrum Poker website built with **Node.js**, **Express**, and *
    The server starts on http://localhost:3000.
    Open that URL in your browser to test the site.
 
-## File Structure
-.
-├── server.js             - Node/Express/Socket.IO server
-├── package.json
-├── public/
-│   ├── index.html        - Landing page (join form)
-│   ├── room.html         - Main Scrum Poker UI
-│   ├── client.js         - Socket.IO client-side logic
-│   └── styles.css        - Front-end styling
-└── README.md
-
 ## Usage
 
 ### Landing Page (`index.html`)
@@ -63,13 +52,6 @@ Once revealed, the script calculates the minimum, maximum, and average of all se
 - **Maximum** estimate tiles are highlighted (e.g., green border).  
 An average is displayed above the user tiles.  
 If **all** revealed estimates match, a short confetti animation plays.
-
-## Deploy your own with Render
-
-**Create an Account**: Sign up or log in at Render.  
-**New Web Service**: Link your GitHub repo, choose your main branch, and set the Build Command to `npm install` and the Start Command to `npm start`.  
-**Free Tier**: Choose the free plan for hosting. Render will provide a URL (e.g., `your-app.onrender.com`).  
-**Access the Site**: Share the URL with your team. They can immediately join your Scrum Poker sessions.
 
 
 
